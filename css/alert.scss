@@ -1,0 +1,43 @@
+@import "variables";
+
+.alert {
+	padding-left: 30px;
+	font-size: $font-size-base;
+}
+.alert span {
+	cursor: pointer;
+}
+.alert:not(.alert-dismissible) {
+	padding-right: 30px;
+}
+.alert.alert-dismissable {
+	padding-right: 44px;
+}
+.alert-inverse {
+	background: rgba(51, 51, 51, 0.9);
+	box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+	color: #fff;
+}
+.alert-inverse a {
+	color: #fff;
+}
+.growl-animated {
+	border: 0;
+	color: #fff;
+}
+.growl-animated.alert-info {
+	background: rgba(33, 150, 243, 0.8);
+	box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+}
+.growl-animated.alert-success {
+	background: rgba(76, 175, 80, 0.8);
+	box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+.growl-animated.alert-warning {
+	background: rgba(255, 152, 0, 0.8);
+	box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+}
+.growl-animated.alert-danger {
+	background: rgba(244, 67, 54, 0.8);
+	box-shadow: 0 0 5px rgba(244, 67, 54, 0.5);
+}

@@ -1,0 +1,79 @@
+@import "variables";
+
+.modal .modal-content {
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.31);
+	border-radius: 3px;
+	border: 0;
+}
+.modal .modal-header {
+	padding: 23px 26px;
+}
+.modal .modal-body {
+	padding: 0 26px 10px;
+}
+.modal .modal-footer .btn-link {
+	font-size: 14px;
+	color: #000;
+	font-weight: 500;
+}
+.modal .modal-footer .btn-link:hover {
+	background-color: #eee;
+}
+.modal:not([data-modal-color]) .modal-footer .btn-link {
+	font-weight: 500;
+}
+.modal:not([data-modal-color]) .modal-footer .btn-link:hover {
+	background-color: #eee;
+}
+.modal[data-modal-color] {
+	color: #fff;
+}
+.modal[data-modal-color] .modal-title,
+.modal[data-modal-color] .modal-footer .btn-link {
+	color: #fff;
+}
+.modal[data-modal-color] .modal-footer {
+	background: rgba(0, 0, 0, 0.1);
+}
+.modal[data-modal-color] .modal-backdrop {
+	background: #fff;
+}
+.modal[data-modal-color] .modal-footer .btn-link {
+	font-weight: 400;
+}
+.modal[data-modal-color] .modal-footer .btn-link:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.modal[data-modal-color="blue"] .modal-content {
+	background: $m-blue;
+}
+.modal[data-modal-color="cyan"] .modal-content {
+	background: $m-cyan;
+}
+.modal[data-modal-color="green"] .modal-content {
+	background: $m-green;
+}
+.modal[data-modal-color="lightgreen"] .modal-content {
+	background: $m-lightgreen;
+}
+.modal[data-modal-color="lightblue"] .modal-content {
+	background: $m-lightblue;
+}
+.modal[data-modal-color="amber"] .modal-content {
+	background: $m-amber;
+}
+.modal[data-modal-color="teal"] .modal-content {
+	background: $m-teal;
+}
+.modal[data-modal-color="orange"] .modal-content {
+	background: $m-orange;
+}
+.modal[data-modal-color="bluegray"] .modal-content {
+	background: $m-bluegray;
+}
+.modal[data-modal-color="red"] .modal-content {
+	background: $m-red;
+}
+.modal-backdrop {
+	z-index: 1000;
+}

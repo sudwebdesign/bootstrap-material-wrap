@@ -1,0 +1,120 @@
+@import "variables";
+.bootstrap-select .dropdown-toggle:focus {
+	outline: none !important;
+}
+.bootstrap-select > .btn-default {
+	background: none !important;
+	border-bottom: 1px solid #e0e0e0 !important;
+	border-radius: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+.bootstrap-select > .btn-default:before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	content: "";
+	height: calc(100% - 2px);
+	width: 30px;
+	background-color: #FFF;
+	background-position: right calc(100% - 7px);
+	background-repeat: no-repeat;
+	background-image: url("#{$img-path}select.png");
+	pointer-events: none;
+	z-index: 5;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+	.bootstrap-select > .btn-default:before {
+		background-image: url("#{$img-path}select@2x.png");
+		background-size: 12px 12px;
+	}
+}
+.bootstrap-select > .btn-default:after {
+	position: absolute;
+	z-index: 3;
+	bottom: -1px;
+	left: 0;
+	height: 2px;
+	width: 0;
+	content: "";
+	-webkit-transition: all;
+	-o-transition: all;
+	transition: all;
+	-webkit-transition-duration: 300ms;
+	transition-duration: 300ms;
+}
+.bootstrap-select > .btn-default:not(.disabled):after,
+.bootstrap-select > .btn-default:not(.readonly):after {
+	background: $m-blue;
+}
+.bootstrap-select > .btn-default.disabled:after,
+.bootstrap-select > .btn-default.readonly:after {
+	background: #ccc;
+}
+.bootstrap-select.open > .btn-default:after {
+	width: 100%;
+}
+.bootstrap-select .bs-searchbox {
+	padding: 0 18px;
+	margin: 5px 0 10px;
+	position: relative;
+}
+.bootstrap-select .bs-searchbox:before {
+	position: absolute;
+	left: 14px;
+	top: 2px;
+	width: 30px;
+	height: 100%;
+	content: "\f1c3";
+	font-family: $font-icon-md;
+	font-size: 25px;
+}
+.bootstrap-select .bs-searchbox input {
+	padding-left: 25px;
+	border: 0;
+}
+.bootstrap-select.btn-group .dropdown-menu li a.opt {
+	padding-left: 17px;
+}
+.bootstrap-select .check-mark {
+	margin-top: -5px !important;
+	font-size: 19px;
+	-webkit-transition: all;
+	-o-transition: all;
+	transition: all;
+	-webkit-transition-duration: 200ms;
+	transition-duration: 200ms;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	display: block !important;
+	position: absolute;
+	top: 11px;
+	right: 15px;
+}
+.bootstrap-select .check-mark:before {
+	content: "\f26b";
+	font-family: $font-icon-md;
+}
+.bootstrap-select .selected .check-mark {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.bootstrap-select .notify {
+	bottom: 0 !important;
+	margin: 0 !important;
+	width: 100% !important;
+	border: 0 !important;
+	background: $m-red !important;
+	color: #fff !important;
+	text-align: center;
+}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+	width: 100%;
+}

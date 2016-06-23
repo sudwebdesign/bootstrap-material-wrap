@@ -1,0 +1,21 @@
+{
+    "name": "bootstrap-material-wrap",
+    "homepage": "https://github.com/redcatphp/bootstrap-material-wrap/",
+    "description": "bootstrap material wrap",
+	"keywords": [
+		"bootstrap",
+		"material",
+		"scss",
+		"css"
+	],
+    "authors": [
+        "Jo <jo@surikat.pro>"
+    ],
+    "license": "MIT",
+    "dependencies": {
+		"material-design-iconic-font": "*",
+    },
+    "install": {
+		
+    }
+}

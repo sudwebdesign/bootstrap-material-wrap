@@ -1,0 +1,209 @@
+@import "variables";
+
+.wall {
+	max-width: 1000px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.wall {
+		width: 600px;
+	}
+}
+.wall-attrs {
+	margin-bottom: 0;
+}
+.wa-stats {
+	float: left;
+}
+.wa-stats > span {
+	margin-right: -1px;
+	padding: 7px 12px;
+	border: 1px solid #E0E0E0;
+	float: left;
+	font-weight: 500;
+}
+.wa-stats > span.active {
+	color: $m-green;
+}
+.wa-stats > span:first-child {
+	border-radius: 2px 0 0 2px;
+}
+.wa-stats > span:last-child {
+	border-radius: 0 2px 2px 0;
+}
+.wa-stats > span > i {
+	line-height: 100%;
+	vertical-align: top;
+	position: relative;
+	top: 2px;
+	font-size: 15px;
+	margin-right: 2px;
+}
+.wa-users {
+	float: right;
+	padding: 0 !important;
+	margin-right: -5px;
+}
+.wa-users > a {
+	display: inline-block;
+	margin-left: 2px;
+}
+.wa-users > a > img {
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+}
+.wa-users > a > img:hover {
+	opacity: 0.85;
+	filter: alpha(opacity=85);
+}
+.wcc-inner {
+	border: 1px solid #E4E4E4;
+	padding: 10px 15px;
+	resize: none;
+	border-radius: 2px;
+	background: #fff;
+	color: #9A9A9A;
+	cursor: pointer;
+}
+.wcci-text {
+	border: 0;
+	display: block;
+	width: 100%;
+	resize: none;
+	padding: 0;
+}
+.wall-comment-list {
+	padding: 20px;
+	background: $app-gray;
+}
+.wall-comment-list .media {
+	position: relative;
+}
+.wall-comment-list .media:hover .actions {
+	display: block;
+}
+.wall-comment-list .actions {
+	display: none;
+	position: absolute;
+	right: -20px;
+	top: -1px;
+}
+.wcl-list + .wcl-form {
+	margin-top: 25px;
+}
+.wp-text {
+	border: 0;
+	padding: 0;
+	display: block;
+	width: 100%;
+	resize: none;
+}
+.wp-media {
+	background: $app-gray;
+	border: 1px solid #E4E4E4;
+	padding: 12px 15px;
+	margin-top: 25px;
+	text-align: center;
+}
+.wpb-actions {
+	background: $app-gray;
+	margin: 0;
+	padding: 10px 20px;
+}
+.wpb-actions > li:not(.pull-right) {
+	float: left;
+}
+[data-wpba="image"] {
+	color: $m-green;
+}
+[data-wpba="image"]:hover {
+	color: #449d48;
+}
+[data-wpba="video"] {
+	color: $m-orange;
+}
+[data-wpba="video"]:hover {
+	color: #e68900;
+}
+[data-wpba="link"] {
+	color: $m-cyan;
+}
+[data-wpba="link"]:hover {
+	color: #00a5bb;
+}
+.wpba-attrs > ul > li {
+	padding: 0;
+	margin-right: 5px;
+}
+.wpba-attrs > ul > li > a {
+	display: block;
+	width: 22px;
+}
+.wpba-attrs > ul > li > a > i {
+	font-size: 20px;
+}
+.wpba-attrs > ul > li.active i {
+	color: #333;
+}
+.wall-img-preview {
+	text-align: center;
+}
+@media screen and (min-width: 768px) {
+	.wall-img-preview {
+		margin: 0 -23px 20px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.wall-img-preview {
+		margin: 0 -16px 20px;
+	}
+}
+.wall-img-preview .wip-item {
+	display: block;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid #fff;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+.wall-img-preview .wip-item > img {
+	display: none;
+}
+.wall-img-preview .wip-item:first-child:nth-last-child(2),
+.wall-img-preview .wip-item:first-child:nth-last-child(2) ~ div {
+	width: 50%;
+	padding-bottom: 40%;
+}
+.wall-img-preview .wip-item:first-child:nth-last-child(3),
+.wall-img-preview .wip-item:first-child:nth-last-child(3) ~ div,
+.wall-img-preview .wip-item:first-child:nth-last-child(4),
+.wall-img-preview .wip-item:first-child:nth-last-child(4) ~ div:not(:last-child),
+.wall-img-preview .wip-item:first-child:nth-last-child(5),
+.wall-img-preview .wip-item:first-child:nth-last-child(5) ~ div:not(:nth-last-of-type(-n+2)),
+.wall-img-preview .wip-item:first-child:nth-last-child(6),
+.wall-img-preview .wip-item:first-child:nth-last-child(6) ~ div,
+.wall-img-preview .wip-item:first-child:nth-last-child(7) ~ div:nth-last-of-type(-n+3) {
+	width: 33.333333%;
+	padding-bottom: 30%;
+}
+.wall-img-preview .wip-item:first-child:nth-last-child(5) ~ div:nth-last-of-type(-n+2) {
+	width: 50%;
+	padding-bottom: 40%;
+}
+.wall-img-preview .wip-item:first-child:nth-last-child(7),
+.wall-img-preview .wip-item:first-child:nth-last-child(7) ~ div:not(:nth-last-of-type(-n+3)),
+.wall-img-preview .wip-item:first-child:nth-last-child(n+8),
+.wall-img-preview .wip-item:first-child:nth-last-child(n+8) ~ div {
+	width: 25%;
+	padding-bottom: 22%;
+}
+.wall-img-preview .wip-item:only-child,
+.wall-img-preview .wip-item:first-child:nth-last-child(4) ~ div:nth-child(4) {
+	width: 100%;
+	padding-bottom: 50%;
+}

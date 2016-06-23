@@ -1,0 +1,41 @@
+@import "vendors/sweetalert";
+@import "variables";
+.sweet-alert {
+	border-radius: 2px;
+	padding: 10px 30px;
+	
+/*
+	height: 100vh;
+    top: 100px;
+	height: 100vh;
+*/
+	overflow:auto;
+	margin-top: 0 !important;
+	top: 100px;
+	height: calc(100vh - 200px);
+}
+.sweet-alert h2 {
+	font-size: 16px;
+	font-weight: 400;
+	position: relative;
+	z-index: 1;
+}
+.sweet-alert .lead {
+	font-size: $font-size-base;
+}
+.sweet-alert .btn {
+	padding: 6px 12px;
+	font-size: $font-size-base;
+	margin: 20px 2px 0;
+}
+
+.sweet-alert-error-box{
+	text-align:left;
+	width:100%;
+}
+.sa-button-container{
+	padding-bottom: 30px;
+}
+.sa-error{
+	cursor: pointer;
+}
