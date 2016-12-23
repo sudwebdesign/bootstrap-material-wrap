@@ -12,7 +12,10 @@
 	overflow:auto;
 	margin-top: 0 !important;
 	top: 100px;
-	height: calc(100vh - 200px);
+
+	&.swal-scrollable{	
+		height: calc(100vh - 200px);
+	}
 }
 .sweet-alert h2 {
 	font-size: 16px;
@@ -39,3 +42,4 @@
 .sa-error{
 	cursor: pointer;
 }
+
